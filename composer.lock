@@ -1,0 +1,63 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "049eef0e88721568363900308116edd0",
+    "packages": [
+        {
+            "name": "cleeng/cleeng-php-sdk",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cleeng/cleeng-php-sdk.git",
+                "reference": "b2de66fd493d2d10c7e818b846ca72fdf58285ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cleeng/cleeng-php-sdk/zipball/b2de66fd493d2d10c7e818b846ca72fdf58285ff",
+                "reference": "b2de66fd493d2d10c7e818b846ca72fdf58285ff",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Cleeng": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "PHP SDK for Cleeng API",
+            "homepage": "http://cleeng.com/",
+            "keywords": [
+                "api",
+                "cleeng",
+                "sdk"
+            ],
+            "time": "2013-08-09 07:51:41"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "cleeng/cleeng-php-sdk": 20
+    },
+    "platform": {
+        "php": ">=5.2.0",
+        "ext-curl": "*"
+    },
+    "platform-dev": [
+
+    ]
+}

@@ -1,0 +1,8 @@
+*.orig
+.directory
+.DS_Store
+.settings
+.project
+/.idea
+/nbproject
+vendor

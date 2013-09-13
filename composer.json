@@ -1,0 +1,21 @@
+{
+    "name": "cleeng/cleeng-download-example",
+    "description": "Example: Download to Own",
+    "license": "BSD-3-Clause",
+    "version": "3.0.0",
+    "keywords": [
+        "cleeng",
+        "download"
+    ],
+    "require": {
+        "php": ">=5.2.0",
+        "ext-curl": "*",
+        "cleeng/cleeng-php-sdk": "dev-master"
+    },
+    "homepage": "http://cleeng.com/",
+    "autoload": {
+        "psr-0": {
+            "Cleeng": "src"
+        }
+    }
+}

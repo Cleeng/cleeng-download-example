@@ -1,5 +1,5 @@
 <?php
-require_once('library/cleeng-php-sdk/cleeng_api.php');
+require_once('vendor/cleeng/cleeng-php-sdk/cleeng_api.php');
 
 $itemOfferId = 'A655681095_SE';
 
