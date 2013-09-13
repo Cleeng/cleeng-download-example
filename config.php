@@ -10,17 +10,13 @@ $file = "185933540.mp4";
 
 /**
  *  Cleeng Api setup
- *  EndPoint and jsApiUrl => depends of the environment you choose (sandbox.cleeng.com, cleeng.com)
  *  publisherToken  => https://dashboard.cleeng.com/api-keys
- *
+ *  enableSandbox => enable sandbox env for testing
  */
-$cleengApi = new Cleeng_Api(
-    array(
-            'endPoint' =>  "https://sandbox.cleeng.com/api/3.0/json-rpc",
-            'jsApiUrl' => "https://sandbox.cleeng.com/js-api/3.0/api.js",
-            'publisherToken' => "O6aI6mPm7Ph5FNWFN9iPI1NSXA0tdoJgHKEYOjNWykZ88Z-O",
-        )
-);
+$cleengApi = new Cleeng_Api();
+$cleengApi->enableSandbox();
+$cleengApi->setPublisherToken('O6aI6mPm7Ph5FNWFN9iPI1NSXA0tdoJgHKEYOjNWykZ88Z-O');
+
 
 /**
  * Get information about single offer

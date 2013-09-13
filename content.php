@@ -1,10 +1,6 @@
 <?php
 include 'config.php';
 
-if (!isset($_COOKIE['CleengClientAccessToken']) && isset($_REQUEST['CleengClientAccessToken'])) {
-    setcookie('CleengClientAccessToken', $_REQUEST['CleengClientAccessToken'], time()+3600*24*14, '/');
-}
-
 // Check if visitor has access to protected content
 if ($cleengApi->isAccessGranted($itemOfferId)) {
 
