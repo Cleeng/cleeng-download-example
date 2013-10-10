@@ -124,14 +124,7 @@ include 'config.php';
     $('document').ready(function () {
 
         function loadContent(token) {
-            var cleengClientAccessToken = '';
-
-            if (token != undefined) {
-                cleengClientAccessToken = '&CleengClientAccessToken=' + token;
-            }
-
-            $.post('content.php?itemOfferId=' + itemOfferId
-                + cleengClientAccessToken, function (result) {
+            $.post('content.php', function (result) {
                 if (result) {
                     $('#cleeng_content').html(result);
                 } else {
@@ -139,7 +132,6 @@ include 'config.php';
                 }
             });
         }
-
         $('#cleeng_purchase').click(function () {
             CleengApi.purchase(itemOfferId, function (accessStatus) {
                 if (accessStatus.accessGranted) {

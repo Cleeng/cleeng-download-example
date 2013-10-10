@@ -15,8 +15,6 @@ $file = "185933540.mp4";
  */
 $cleengApi = new Cleeng_Api();
 $cleengApi->enableSandbox();
-$cleengApi->setPublisherToken('O6aI6mPm7Ph5FNWFN9iPI1NSXA0tdoJgHKEYOjNWykZ88Z-O');
-
 
 /**
  * Get information about single offer
