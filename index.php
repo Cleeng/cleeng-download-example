@@ -107,6 +107,18 @@ include 'config.php';
     </div>
 
     <hr>
+
+    <p>The demo is connected to the sandbox environment. To purchase the offer and download the example file use the dummy credit card details:</p>
+    <ul>
+        <li>Card number: 5555 4444 3333 1111</li>
+        <li>Card name: any</li>
+        <li>Card date: 06 / 2016</li>
+        <li>CVC: 737</li>
+    </ul>
+
+
+
+    <hr>
     <div class="footer">
         <p>&copy; Cleeng 2013</p>
     </div>
