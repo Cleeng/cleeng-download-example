@@ -2,7 +2,7 @@
 include 'config.php';
 
 // Check if visitor has access to protected content
-if ($cleengApi->isAccessGranted($itemOfferId)) {
+if ($cleengApi->isAccessGranted($offerId)) {
 
 	echo <<<HTML
          <div class="alert alert-success">

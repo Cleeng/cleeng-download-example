@@ -90,7 +90,7 @@ include 'config.php';
         <p class="lead"></p>
         <? if ($accessStatus && $accessStatus->accessGranted) { ?>
 
-            <div class="alert alert-success">
+            <div class="alert alert-success">accou
                 You bought the video for download. <a href="file.php">Download now</a>
             </div>
 
@@ -119,7 +119,7 @@ include 'config.php';
 <script type="text/javascript" src="<?php echo $cleengApi->getJsApiUrl(); ?>"></script>
 
 <script type="text/javascript">
-    var itemOfferId = '<?php echo $itemOfferId; ?>';
+    var offerId = '<?php echo $offerId; ?>';
 
     $('document').ready(function () {
 
@@ -133,7 +133,7 @@ include 'config.php';
             });
         }
         $('#cleeng_purchase').click(function () {
-            CleengApi.purchase(itemOfferId, function (accessStatus) {
+            CleengApi.purchase(offerId, function (accessStatus) {
                 if (accessStatus.accessGranted) {
                     $('#cleeng_loader').show();
                     loadContent(accessStatus.token);
