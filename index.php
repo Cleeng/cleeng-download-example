@@ -90,7 +90,7 @@ include 'config.php';
         <p class="lead"></p>
         <? if ($accessStatus && $accessStatus->accessGranted) { ?>
 
-            <div class="alert alert-success">accou
+            <div class="alert alert-success">
                 You bought the video for download. <a href="file.php">Download now</a>
             </div>
 

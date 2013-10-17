@@ -6,7 +6,7 @@ $offerId = 'A655681095_SE';
 /**
  * We strongly advice to create a download link that expires automatically within certain time
  */
-$file = "185933540.mp4";
+$file = "myvideo.mp4";
 
 /**
  *  Cleeng Api setup
@@ -15,11 +15,6 @@ $file = "185933540.mp4";
  */
 $cleengApi = new Cleeng_Api();
 $cleengApi->enableSandbox();
-
-/**
- * Get information about single offer
- */
-$itemOffer = $cleengApi->getSingleOffer($offerId);
 
 /**
  * Returns information about logged in user access to offer.
